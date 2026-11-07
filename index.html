@@ -57,26 +57,26 @@ footer{background:#241713;color:#d9c9bd;padding:27px 0;font-size:12px}
 </style></head>
 <body>
 <header class="hero"><div class="container">
-<nav><div class="brand"><span class="brand-mark">✿</span><span>M I T H A I</span></div><div class="nav-right"><span class="pin">●</span> Baghpat, Uttar Pradesh</div></nav>
-<div class="hero-copy"><div class="eyebrow">A little sweetness, close to home</div><h1>Find your favourite<br>mithai shop.</h1><p>Explore sweet shops and local favourites around Baghpat. Search, compare ratings and get directions in just a few clicks.</p></div>
+<nav><div class="brand"><span class="brand-mark">✿</span><span>M I T H A I</span></div><div class="nav-right"><span class="pin">●</span> Greater Noida, Uttar Pradesh</div></nav>
+<div class="hero-copy"><div class="eyebrow">A little sweetness, close to home</div><h1>Find your favourite<br>mithai shop.</h1><p>Explore sweet shops and local favourites around Greater Noida. Search, compare ratings and get directions in just a few clicks.</p></div>
 <div class="search-panel"><div class="search-wrap"><span>⌕</span><input id="search" type="search" placeholder="Search shops, locations or sweets…" aria-label="Search shops"></div><button onclick="render()">Search shops&nbsp; →</button></div>
 </div></header>
 <main class="container">
-<div class="section-head"><div><div class="kicker">The local directory</div><h2>Sweet spots around Baghpat</h2><div class="sub">Find something delicious for every occasion.</div></div><div class="result-count" id="count" aria-live="polite"></div></div>
+<div class="section-head"><div><div class="kicker">The local directory</div><h2>Sweet spots around Greater Noida</h2><div class="sub">Find something delicious for every occasion.</div></div><div class="result-count" id="count" aria-live="polite"></div></div>
 <div class="toolbar"><div class="chips"><button class="chip active" data-filter="all">All shops</button><button class="chip" data-filter="sweet">Sweet shops</button><button class="chip" data-filter="snack">Sweets & snacks</button></div><select id="sort" aria-label="Sort shops"><option value="recommended">Recommended order</option><option value="rating">Highest rated</option><option value="name">Name: A to Z</option></select></div>
 <section class="grid" id="cards"></section><div class="empty" id="empty">No matching shops found. Try a different search.</div>
 <div class="info"><strong>Local listing information:</strong> Ratings, review counts, addresses and phone numbers may change and have not been verified live. Please confirm details and opening hours with the shop before visiting. Use the directions link to check the current location on Google Maps.</div>
 </main>
-<footer><div class="container footer-inner"><span>✿ &nbsp; MITHAI — Discover local sweetness.</span><span>Made for Baghpat · Uttar Pradesh</span></div></footer>
+<footer><div class="container footer-inner"><span>✿ &nbsp; MITHAI — Discover local sweetness.</span><span>Made for Greater Noida · Uttar Pradesh</span></div></footer>
 <script>
 const shops=[
-{name:"Bhagatji Balushahi Wale",area:"Meerut Road, near Bank of Baroda, New Colony",rating:null,reviews:0,type:"sweet",special:"Known for balushahi",phone:"+918533002975",query:"Bhagatji Balushahi Wale Meerut Road Baghpat"},
-{name:"Punjabi Sweet House (Ramu Halwai)",area:"Gandhi Bazar Road, Gandhi Market",rating:4.2,reviews:269,type:"snack",special:"Gulab jamun, sweets and snacks",phone:"+919412122866",query:"Punjabi Sweet House Ramu Halwai Gandhi Bazar Baghpat"},
-{name:"Kundu Tikki Wala Sweet & Restaurant",area:"Delhi–Shamli–Saharanpur Road, Bhajan Vihar",rating:4.9,reviews:552,type:"snack",special:"Sweets, desi ghee jalebi and tikki",phone:"+917818954618",query:"Kundu Tikki Wala Sweet Restaurant Baghpat"},
-{name:"Punjab Conf & Sweet House (Shoki Halwai)",area:"Baghpat Bangar",rating:4.1,reviews:230,type:"snack",special:"Sweets and vegetarian snacks",phone:"",query:"Punjab Conf Sweet House Shoki Halwai Baghpat"},
-{name:"Bhagat Ji Sweets",area:"Baghpat, Uttar Pradesh",rating:4.3,reviews:21,type:"sweet",special:"Traditional Indian sweets",phone:"",query:"Bhagat Ji Sweets Baghpat"},
-{name:"Bansiwala Sweets and Namkeen",area:"Vandna Chowk, Meerut Road, New Colony",rating:4.7,reviews:13,type:"snack",special:"Sweets and namkeen",phone:"+919058045333",query:"Bansiwala Sweets and Namkeen Vandna Chowk Baghpat"},
-{name:"Hina Sweets",area:"Pandav Marg, Katipura",rating:4.6,reviews:27,type:"sweet",special:"Sweets and dessert options",phone:"+918941999099",query:"Hina Sweets Pandav Marg Baghpat"}
+{name:"Bhagatji Balushahi Wale",area:"Meerut Road, near Bank of Baroda, New Colony",rating:null,reviews:0,type:"sweet",special:"Known for balushahi",phone:"+918533002975",query:"Bhagatji Balushahi Wale Meerut Road Greater Noida"},
+{name:"Punjabi Sweet House (Ramu Halwai)",area:"Gandhi Bazar Road, Gandhi Market",rating:4.2,reviews:269,type:"snack",special:"Gulab jamun, sweets and snacks",phone:"+919412122866",query:"Punjabi Sweet House Ramu Halwai Gandhi Bazar Greater Noida"},
+{name:"Kundu Tikki Wala Sweet & Restaurant",area:"Delhi–Shamli–Saharanpur Road, Bhajan Vihar",rating:4.9,reviews:552,type:"snack",special:"Sweets, desi ghee jalebi and tikki",phone:"+917818954618",query:"Kundu Tikki Wala Sweet Restaurant Greater Noida"},
+{name:"Punjab Conf & Sweet House (Shoki Halwai)",area:"Greater Noida Bangar",rating:4.1,reviews:230,type:"snack",special:"Sweets and vegetarian snacks",phone:"",query:"Punjab Conf Sweet House Shoki Halwai Greater Noida"},
+{name:"Bhagat Ji Sweets",area:"Greater Noida, Uttar Pradesh",rating:4.3,reviews:21,type:"sweet",special:"Traditional Indian sweets",phone:"",query:"Bhagat Ji Sweets Greater Noida"},
+{name:"Bansiwala Sweets and Namkeen",area:"Vandna Chowk, Meerut Road, New Colony",rating:4.7,reviews:13,type:"snack",special:"Sweets and namkeen",phone:"+919058045333",query:"Bansiwala Sweets and Namkeen Vandna Chowk Greater Noida"},
+{name:"Hina Sweets",area:"Pandav Marg, Katipura",rating:4.6,reviews:27,type:"sweet",special:"Sweets and dessert options",phone:"+918941999099",query:"Hina Sweets Pandav Marg Greater Noida"}
 ];
 let activeFilter='all';
 function render(){
